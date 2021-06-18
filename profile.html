@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Shopkart.com, Online Shopping, online shopping india, india shopping online, shopkart india, shopkart, buy online, buy mobiles online, buy books online, computers, laptop, toys, trimmers, watches, fashion jewellery, home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors" />
+    <meta name="keywords" content="online shopping site, online shopping india, online shopping site india, cash on delivery, free shipping, shopkart.com" />
+    <meta name="og_title" property="og:title" content="Shopkart.com" />
+    <meta name="og_site_name" property="og:site_name" content="Shopkart.com" />
+    <meta name="og_url" property="og:url" id="og-url" content="https://www.shopkart.com" />
+    <meta property="og:image" content="./assets/images/favicon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css" integrity="sha512-x9WWODH0qw+aXoiT69XzI4WX2MXpqvVGY+O9HpJ4wbjEubpjDIM5CwTrU/OFJg7tSMbBMpgwz2Qp6xlUsk+FgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Lighbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.5/css/lightgallery-bundle.min.css" integrity="sha512-Sg6/ETzjZfcuzu/KmKRj79kxj2o40cNSTtnc0igt6vT2IAhUt6UstDveJGvWa3sEr27BgWgsA7S4sGCYi78siA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Fav icon -->
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png" sizes="16x16" />
+
+    <title>Online Shopping Site India - Shop Electronics, Men & Women Clothing, Shoes</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Navbar -->
+    <nav class="sticky-top primary-navbar navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container justify-content-start">
+        <!-- Navbar Toggle -->
+        <button id="nav-toggle" class="btn text-white p-0 me-2 d-lg-none" type="button">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navbar Brand -->
+        <a class="navbar-brand me-sm-4" href="index.html">Shopkart</a>
+
+        <!-- Search -->
+        <form autocomplete="off" class="search-form d-flex bg-white mt-3 mt-lg-0 me-lg-4 order-lg-2 order-3">
+          <input class="form-control border-0 py-1" type="text" id="search" placeholder="Search for products" />
+          <button class="btn text-primary" type="submit"><i class="fas fa-search"></i></button>
+          <ul class="search-suggest bg-white shadow list-group list-group-flush p-0 overflow-hidden">
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Mobile</a>
+            </li>
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Laptops</a>
+            </li>
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Tv</a>
+            </li>
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Tshirts</a>
+            </li>
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Furniture</a>
+            </li>
+          </ul>
+        </form>
+
+        <ul class="list-unstyled ms-auto d-flex justify-content-end align-items-center mb-0 order-lg-3 order-2">
+          <li class="nav-item d-flex align-items-center ms-4">
+            <a href="login.html" class="nav-link fw-bold btn btn-light text-primary py-1 px-sm-5 me-1" type="button">
+              <span class="d-sm-none fas fa-user"></span>
+              <span class="d-sm-inline-block d-none">Login</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown d-lg-block d-none mx-2">
+            <a class="dropdown-toggle nav-link text-white" href="#" id="more" role="button" data-bs-toggle="dropdown" aria-expanded="false"> More </a>
+            <ul class="dropdown-menu shadow-sm p-0 overflow-hidden" aria-labelledby="more">
+              <li><a class="dropdown-item border-bottom" href="#">Notification Preference</a></li>
+              <li><a class="dropdown-item border-bottom" href="#">Sell on Shopkart</a></li>
+              <li><a class="dropdown-item border-bottom" href="#">24 x 7 Customer Care</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="cart.html"><i class="fas fa-shopping-cart me-2"></i> <span class="d-none d-lg-inline-block">Cart</span> <span class="badge rounded-pill bg-danger">1</span></a>
+          </li>
+        </ul>
+
+        <!-- Sidebar on Mobile Devices -->
+        <div class="min-vh-100 bg-white overflow-auto" id="sidebar">
+          <ul class="list-unstyled">
+            <li class="nav-item text-dark d-flex justify-content-end pt-3 pb-2 me-3">
+              <span id="close"><i id="close" class="fs-4 fa fa-times"></i></span>
+            </li>
+            <li class="nav-item bg-primary py-2"><a class="nav-link text-white" href="login.html">Login & Sign Up</a></li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="categories.html"><i class="fas fa-fw fa-th-large"></i> All Categories</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="orders.html"><i class="fas fa-fw fa-shopping-bag"></i> My Orders</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="coupons.html"><i class="fas fa-fw fa-ticket-alt"></i> My Coupons</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="cart.html"><i class="fas fa-fw fa-shopping-cart"></i> My Cart</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="wishlist.html"><i class="fas fa-fw fa-heart"></i> My Wishlist</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="profile.html"><i class="fas fa-fw fa-user"></i> My Account</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="#"><i class="fas fa-fw fa-users"></i> Help Centre</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="#"><i class="fas fa-fw fa-sign-out-alt"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <div class="container-fluid">
+      <div class="products-main-container profile d-flex align-items-start flex-lg-row flex-column py-2 bg-light">
+        <div class="left border bg-white">
+          <div class="d-flex h-100 w-100">
+            <div class="w-100 nav align-items-stretch nav-pills py-0" id="profile-tab">
+              <a href="orders.html" class="nav-link py-3 fw-bold d-lg-block d-none">My Orders</a>
+              <button class="nav-link py-3 fw-bold text-start active" data-bs-toggle="pill" data-bs-target="#profile" type="button">Profile Information</button>
+              <button class="nav-link py-3 fw-bold text-start" data-bs-toggle="pill" data-bs-target="#address" type="button">Manage Address</button>
+              <button class="nav-link py-3 fw-bold text-start" data-bs-toggle="pill" data-bs-target="#pan" type="button">PAN Card Information</button>
+              <a href="wishlist.html" class="nav-link py-3 fw-bold d-lg-block d-none">My Wishlist</a>
+              <a href="#" class="nav-link py-3 fw-bold d-lg-block d-none">Logout</a>
+            </div>
+          </div>
+        </div>
+        <div class="right border p-3 bg-white align-self-stretch">
+          <div class="tab-content" id="profile-tabContent">
+            <div class="mb-4 tab-pane fade show active" id="profile">
+              <div class="mb-3 d-flex align-items-end">
+                <h5 class="fw-bold mb-0">Personal Information</h5>
+                <a href="#" class="nav-link p-0 ms-4 fw-bold">Edit</a>
+              </div>
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">First name</label>
+                      <input type="text" class="form-control" name="first-name" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Last name</label>
+                      <input type="text" class="form-control" name="last-name" />
+                    </div>
+                  </div>
+                </div>
+                <div class="gender mb-4">
+                  <h6 class="fw-bold mb-3">Your Gender</h6>
+                  <div class="d-flex align-items-center">
+                    <div class="form-check me-4">
+                      <input class="form-check-input" type="radio" name="gender" value="male" />
+                      <label class="form-check-label"> Male </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gender" value="female" />
+                      <label class="form-check-label"> Female </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mobile-number mb-4">
+                  <h6 class="fw-bold mb-3">Mobile Number</h6>
+                  <div class="mb-3 biginput">
+                    <label class="form-label">Mobile Number</label>
+                    <input type="text" class="form-control" name="mobile-number" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </form>
+            </div>
+
+            <div class="mb-4 tab-pane fade show" id="address">
+              <div class="mb-3 d-flex">
+                <h5 class="fw-bold mb-0">Manage Addresses</h5>
+                <a href="#" class="nav-link p-0 ms-4 fw-bold">ADD A NEW ADDRESS </a>
+              </div>
+              <div class="addresses">
+                <div class="card">
+                  <div class="card-header dropdown">
+                    <span class="me-4">Fiction</span>
+                    <span>+91 1234567890</span>
+                    <a class="ms-atuo text-dark dropdown-toggle" href="#" data-bs-toggle="dropdown"> </a>
+                    <ul class="dropdown-menu py-0">
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <p>Shopkart Internet Private Limited, Buildings Fiction, Fiction Village, Fiction Road, Fiction, 000000, India</p>
+                  </div>
+                </div>
+              </div>
+              <form action="#">
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Name</label>
+                      <input type="text" class="form-control" name="name" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Mobile Number</label>
+                      <input type="number" class="form-control" name="mobile-nubmer" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Pincode</label>
+                      <input type="number" class="form-control" name="pincode" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Locality</label>
+                      <input type="number" class="form-control" name="locality" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Adress</label>
+                      <textarea class="form-control" name="address"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">City/District/Town</label>
+                      <input type="text" class="form-control" name="city" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">State</label>
+                      <select class="form-select" name="state">
+                        <option selected>Select State</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Landmark (Optional)</label>
+                      <input type="text" class="form-control" name="landmark" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Alternate Phone Number (Optional)</label>
+                      <input type="number" class="form-control" name="alternate-mobile-number" />
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </form>
+            </div>
+
+            <div class="mb-4 tab-pane fade show" id="pan">
+              <div class="mb-3 d-flex align-items-end">
+                <h5 class="fw-bold mb-0">PAN Card Information</h5>
+                <a href="#" class="nav-link p-0 ms-4 fw-bold">Edit</a>
+              </div>
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">PAN Card Number</label>
+                      <input type="text" class="form-control" name="pan-number" />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Full Name</label>
+                      <input type="text" class="form-control" name="full-name" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-4">
+                      <label for="formFile" class="form-label">Upload PAN Card (Only JPEG file is allowed)</label>
+                      <input class="form-control" type="file" id="formFile" name="pan-image" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" name="terms" />
+                      <label class="form-check-label" for="flexCheckDefault"> I do hereby declare that PAN furnished/stated above is correct and belongs to me, registered as an account holder with www.shopkart.com. I further declare that I shall solely be held responsible for the consequences, in case of any false PAN declaration. </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pb-3">
+      <div class="container-fluid">
+        <div class="row pt-5 px-sm-4">
+          <!-- About Us -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">About us</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white nav-link px-0 py-1">Contact Us</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">About Us</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Careers</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Shopkart Stories</a></li>
+            </ul>
+          </div>
+
+          <!-- Help -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Help</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white nav-link px-0 py-1">Payments</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Shipping</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Cancellation & Returns</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">FAQ</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Report Infringement</a></li>
+            </ul>
+          </div>
+
+          <!-- Policy -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Policy</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white nav-link px-0 py-1">Return Policy</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Terms of Use</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Security</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Privacy</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Sitemap</a></li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Social</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white nav-link px-0 py-1">Facebook</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Twitter</a></li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">Youtube</a></li>
+            </ul>
+          </div>
+
+          <!-- Mail Us -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Mail Us</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1"> Shopkart Internet Private Limited, Buildings Fiction, Fiction Village, Fiction Road, Fiction, 000000, India </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Registered Office Address -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Registered Office Address</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1"> Shopkart Internet Private Limited, Buildings Fiction, Fiction Village, Fiction Road, Fiction, 111111, India Telephone: 0000 000 0000 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="dropdown-divider bg-white" />
+
+        <!-- Copyrights -->
+        <div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
+          <p class="mb-lg-0 text-white">Copyrights &copy; 2021</p>
+          <img src="./assets/images/payments.svg" class="img-fluid" alt="payments" />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Script Files -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js" integrity="sha512-qqdD5ZLIGB5PCqCk1OD8nFBr/ngB5w+Uw35RE/Ivt5DK35xl1PFVkuOgAbqFpvtoxX6MpRGLmIqixzdhFOJhnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Fslightbox -->
+    <script src="./assets/js/fslightbox.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

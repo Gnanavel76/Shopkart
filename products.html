@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Shopkart.com, Online Shopping, online shopping india, india shopping online, shopkart india, shopkart, buy online, buy mobiles online, buy books online, computers, laptop, toys, trimmers, watches, fashion jewellery, home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors">
+    <meta name="keywords" content="online shopping site, online shopping india, online shopping site india, cash on delivery, free shipping, shopkart.com">
+    <meta name="og_title" property="og:title" content="Shopkart.com">
+    <meta name="og_site_name" property="og:site_name" content="Shopkart.com">
+    <meta name="og_url" property="og:url" id="og-url" content="https://www.shopkart.com">
+    <meta property="og:image" content="./assets/images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css" integrity="sha512-x9WWODH0qw+aXoiT69XzI4WX2MXpqvVGY+O9HpJ4wbjEubpjDIM5CwTrU/OFJg7tSMbBMpgwz2Qp6xlUsk+FgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Lighbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.5/css/lightgallery-bundle.min.css" integrity="sha512-Sg6/ETzjZfcuzu/KmKRj79kxj2o40cNSTtnc0igt6vT2IAhUt6UstDveJGvWa3sEr27BgWgsA7S4sGCYi78siA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Fav icon -->
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png" sizes="16x16">
+
+    <title>Online Shopping Site India - Shop Electronics, Men & Women Clothing, Shoes</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Filter Sidebar For Mobile Devices-->
+    <div id="filter-sidebar" class="min-vh-100 bg-light overflow-auto">
+      <form action="#">
+        <!-- Top Bar -->
+        <div class="py-3 px-2 d-flex align-items-center bg-primary">
+          <span id="filter-back" class="me-4"><i class="fas fa-arrow-left fs-5 text-white"></i></span>
+          <p class="mb-0 fs-5 text-white">Filters</p>
+          <a href="#" class="nav-link p-0 mb-0 fs-6 text-white ms-auto">Clear Filters</a>
+          <input type="submit" name="filter-submit" class="btn text-white ms-2" value="Apply"/>
+        </div>
+
+        <!-- Bottom -->
+        <div class="d-flex h-100">
+          <div class="nav align-items-stretch flex-column nav-pills" id="filters-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link py-3 text-start active" data-bs-toggle="pill" data-bs-target="#price-filter" type="button">Price</button>
+            <button class="nav-link py-3 text-start" data-bs-toggle="pill" data-bs-target="#brand-filter" type="button">Brand</button>
+            <button class="nav-link py-3 text-start" data-bs-toggle="pill" data-bs-target="#discount-filter" type="button">Discount</button>
+            <button class="nav-link py-3 text-start" data-bs-toggle="pill" data-bs-target="#rating-filter" type="button">Ratings</button>
+          </div>
+          <div class="tab-content w-100 ps-3" id="filters-tabContent">
+
+            <!-- Price Filter -->
+            <div class="pt-3 tab-pane fade show active" id="price-filter">
+              <div class="d-flex px-2 align-items-center">
+                <input type="number" placeholder="Min" class="form-control" name="min-price">
+                <p class="mb-0 mx-2">to</p>
+                <input type="number" placeholder="Max" class="form-control" name="max-price">
+              </div>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="pt-3 tab-pane fade" id="brand-filter">
+              <div class="px-2">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" name="brand[]" value="">
+                  <label class="form-check-label">Brand 1</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="brand[]" value="">
+                  <label class="form-check-label">Brand 2</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Discount Filter -->
+            <div class="pt-3 tab-pane fade" id="discount-filter">
+              <div class="px-2">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" name="discount[]" value="">
+                  <label class="form-check-label">10% and below</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="discount[]" value="">
+                  <label class="form-check-label">10% or more</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rating Filter -->
+            <div class="pt-3 tab-pane fade" id="rating-filter">
+              <div class="px-2">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" name="rating[]" value="">
+                  <label class="form-check-label">4 <i class="fas fa-star"></i> & above</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="rating[]" value="">
+                  <label class="form-check-label">3 <i class="fas fa-star"></i> & above</label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Filter Sidebar For Mobile Devices-->
+
+    <!-- Sort For Mobile Devices-->
+    <div id="responsive-sort" class="bg-white">
+      <form action="#">
+        <ul class="list-group rounded-0">
+          <li class="list-group-item py-3 d-flex justify-content-between align-items-end">
+            <p class="mb-0">Sort By</p>
+            <input type="submit" name="sort-submit" class="ms-auto btn p-0 me-3" id="sort-submit" value="Apply">
+            <a href="#" class="btn p-0" id="sort-close">Close</a>
+          </li>
+          <li class="list-group-item">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="sort" value="popular">
+              <label class="form-check-label">
+                Popularity
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="sort" value="asc">
+              <label class="form-check-label">
+                Price - Low to High
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="sort" value="desc">
+              <label class="form-check-label">
+                Price - High to Low
+              </label>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="sort" value="new">
+              <label class="form-check-label">
+                Newest First
+              </label>
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <!-- Sort For Mobile Devices-->
+
+    <!-- Navbar -->
+    <nav class="sticky-top primary-navbar navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container justify-content-start">
+
+          <!-- Navbar Toggle -->
+          <button id="nav-toggle" class="btn text-white p-0 me-2 d-lg-none" type="button">
+              <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Navbar Brand -->
+          <a class="navbar-brand me-sm-4" href="index.html">Shopkart</a>
+          
+          <!-- Search -->
+          <form autocomplete="off" class="search-form d-flex bg-white mt-3 mt-lg-0 me-lg-4 order-lg-2 order-3">
+              <input class="form-control border-0 py-1" type="text" id="search" placeholder="Search for products">
+              <button class="btn text-primary" type="submit"><i class="fas fa-search"></i></button>
+              <ul class="search-suggest bg-white shadow list-group list-group-flush p-0 overflow-hidden">
+                  <li><a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Mobile</a></li>
+                  <li><a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Laptops</a></li>
+                  <li><a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Tv</a></li>
+                  <li><a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Tshirts</a></li>
+                  <li><a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Furniture</a></li>
+              </ul>
+          </form>
+
+          <ul class="list-unstyled ms-auto d-flex justify-content-end align-items-center mb-0 order-lg-3 order-2">
+              <li class="nav-item d-flex align-items-center ms-4">
+                  <a href="login.html" class="nav-link fw-bold btn btn-light text-primary py-1 px-sm-5 me-1" type="button">
+                      <span class="d-sm-none fas fa-user"></span>
+                      <span class="d-sm-inline-block d-none">Login</span>
+                  </a>
+              </li>
+              <li class="nav-item dropdown d-lg-block d-none mx-2">
+                  <a class="dropdown-toggle nav-link text-white" href="#" id="more" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      More
+                  </a>
+                  <ul class="dropdown-menu shadow-sm p-0 overflow-hidden" aria-labelledby="more">
+                      <li><a class="dropdown-item border-bottom" href="#">Notification Preference</a></li>
+                      <li><a class="dropdown-item border-bottom" href="#">Sell on Shopkart</a></li>
+                      <li><a class="dropdown-item border-bottom" href="#">24 x 7 Customer Care</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link text-white" href="cart.html"><i class="fas fa-shopping-cart me-2"></i> <span class="d-none d-lg-inline-block">Cart</span> <span class="badge rounded-pill bg-danger">1</span></a>
+              </li>
+          </ul>
+
+          <!-- Sidebar on Mobile Devices -->
+          <div class="min-vh-100 bg-white overflow-auto" id="sidebar">
+              <ul class="list-unstyled">
+                  <li class="nav-item text-dark d-flex justify-content-end pt-3 pb-2 me-3 "><span id="close"><i id="close" class="fs-4 fa fa-times"></i></span></li>
+                  <li class="nav-item bg-primary py-2"><a class="nav-link text-white" href="login.html">Login & Sign Up</a></li>
+                  <li class="nav-item py-2"><a class="nav-link text-dark" href="categories.html"><i class="fas fa-fw fa-th-large"></i> All Categories</a></li>
+                  <li class="nav-item py-2"><a class="nav-link text-dark" href="orders.html"><i class="fas fa-fw fa-shopping-bag"></i> My Orders</a></li>
+                  <li class="nav-item py-2"><a class="nav-link text-dark" href="coupons.html"><i class="fas fa-fw fa-ticket-alt"></i> My Coupons</a></li>
+                  <li class="nav-item py-2"><a class="nav-link text-dark" href="cart.html"><i class="fas fa-fw fa-shopping-cart"></i> My Cart</a></li>
+                  <li class="nav-item py-2"><a class="nav-link text-dark" href="wishlist.html"><i class="fas fa-fw fa-heart"></i> My Wishlist</a></li>
+                  <li class="nav-item py-2"><a class="nav-link text-dark" href="profile.html"><i class="fas fa-fw fa-user"></i> My Account</a></li>
+                  <li class="nav-item py-2"><a class="nav-link text-dark" href="#"><i class="fas fa-fw fa-users"></i> Help Centre</a></li>
+                  <li class="nav-item py-2"><a class="nav-link text-dark" href="#"><i class="fas fa-fw fa-sign-out-alt"></i> Logout</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Categories -->
+    <div class="container-fluid border-bottom py-1 px-3 bg-white d-lg-block d-none">
+      <div class="d-flex justify-content-center">
+
+        <div class="dropdown me-4">
+          <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Electronics
+          </a>
+        
+          <ul class="dropdown-menu p-0 mt-1">
+            <li><a class="dropdown-item" href="#">Mobile</a></li>
+            <li><a class="dropdown-item" href="#">AC</a></li>
+            <li><a class="dropdown-item" href="#">Laptop</a></li>
+            <li><a class="dropdown-item" href="#">Refregirator</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown me-4">
+          <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Appliances
+          </a>
+        
+          <ul class="dropdown-menu p-0 mt-1">
+            <li><a class="dropdown-item" href="#">Washing Machine</a></li>
+            <li><a class="dropdown-item" href="#">Gas Stove</a></li>
+            <li><a class="dropdown-item" href="#">Vaccum Cleaner</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown me-4">
+          <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Men
+          </a>
+        
+          <ul class="dropdown-menu p-0 mt-1">
+            <li><a class="dropdown-item" href="#">Tshirts</a></li>
+            <li><a class="dropdown-item" href="#">Pants</a></li>
+            <li><a class="dropdown-item" href="#">Trousers</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown me-4">
+          <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Women
+          </a>
+        
+          <ul class="dropdown-menu p-0 mt-1">
+            <li><a class="dropdown-item" href="#">Kurtis</a></li>
+            <li><a class="dropdown-item" href="#">Pants</a></li>
+            <li><a class="dropdown-item" href="#">Frogs</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown me-4">
+          <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Sports
+          </a>
+        
+          <ul class="dropdown-menu p-0 mt-1">
+            <li><a class="dropdown-item" href="#">Hand Gloves</a></li>
+            <li><a class="dropdown-item" href="#">Football</a></li>
+            <li><a class="dropdown-item" href="#">Cricekt Bat</a></li>
+          </ul>
+        </div>
+
+        <div class="dropdown me-4">
+          <a class="btn dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Furniture
+          </a>
+        
+          <ul class="dropdown-menu p-0 mt-1">
+            <li><a class="dropdown-item" href="#">Bed</a></li>
+            <li><a class="dropdown-item" href="#">Bedsheet</a></li>
+            <li><a class="dropdown-item" href="#">Pillow</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Categories -->
+
+    <!-- Main -->
+    <div class="container-fluid p-2 bg-light">
+      <div class="products-main-container d-flex align-items-start">
+
+        <!-- Filter -->
+        <div class="left d-lg-block d-none border py-2 bg-white">
+          <form action="#">
+
+            <p class="fs-5 border-bottom p-2">Filters</p>
+
+            <!-- Price Filter -->
+            <div class="mb-4">
+              <p class="fs-6 border-bottom p-2">Price</p>
+              <div class="d-flex px-2 align-items-center">
+                <input type="number" placeholder="Min" class="form-control" name="min-price">
+                <p class="mb-0 mx-2">to</p>
+                <input type="number" placeholder="Max" class="form-control" name="max-price">
+              </div>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="mb-4">
+              <p class="fs-6 border-bottom p-2">Brand</p>
+              <div class="px-2">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" name="brand[]" value="">
+                  <label class="form-check-label">Brand 1</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="brand[]" value="">
+                  <label class="form-check-label">Brand 2</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Discount Filter -->
+            <div class="mb-4">
+              <p class="fs-6 border-bottom p-2">Discount</p>
+              <div class="px-2">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" name="discount[]" value="">
+                  <label class="form-check-label">10% and below</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="discount[]" value="">
+                  <label class="form-check-label">10% or more</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ratings Filter -->
+            <div class="ratings-filter pb-4">
+              <p class="fs-6 border-bottom p-2">Customers Rating</p>
+              <div class="px-2">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" name="rating[]" value="">
+                  <label class="form-check-label">4 <i class="fas fa-star"></i> & above</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="rating[]" value="">
+                  <label class="form-check-label">3 <i class="fas fa-star"></i> & above</label>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Product Container -->
+        <div class="right border p-2 bg-white align-self-stretch">
+
+          <!-- Menu For filter and sort for mobile devices -->
+          <div class="d-flex align-items-center border-bottom mb-3 d-lg-none">
+            <a href="#" id="sort" class="nav-link text-center text-dark bg-white flex-grow-1"><i class="fas fa-sort"></i> Sort</a>
+            <a href="#" id="filter" class="nav-link text-center text-dark bg-white flex-grow-1"><i class="fas fa-filter"></i> Filters</a>
+          </div>
+
+          <!-- Breadcrumb -->
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">Home</li>
+              <li class="breadcrumb-item active">Products</li>
+            </ol>
+          </nav>
+
+          <!-- Result -->
+          <p class="fs-5 mb-1">Products <small class="text-muted fs-6">(Showing 1 – 9 of 20 results)</small></p>
+
+          <!-- Sort -->
+          <div class="sort d-lg-flex d-none border-bottom">
+              <p class="ps-0 mb-0 nav-link text-dark">Sort By</p>
+              <a href="#" class="nav-link text-dark active">Popularity</a>
+              <a href="#" class="nav-link text-dark">Price - Low to High</a>
+              <a href="#" class="nav-link text-dark">Price - High to Low</a>
+              <a href="#" class="nav-link text-dark">Newest First</a>
+          </div>
+
+          <!-- Products -->
+          <div class="products-container">
+            <div class="row g-2">
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/furniture/furniture.jpeg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">Flipkart Perfect Homes Julian Engineered Wood 4 Door Wardrobe  (Finish Color - Dark Walnut, Mirror Included, Knock Down)</h6>
+                              <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 14,990</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 20,999</h6>
+                                  <h6 class="text-success">28% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/electronics/laptop/laptop.jpeg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">Lenovo Core i5 9th Gen - (8 GB/1 TB HDD/Windows 10 Home/3 GB Graphics/NVIDIA GeForce GTX 1050) L340-15IRH Gaming Laptop  (15.6 inch, Granite Black, 2.19 kg)</h6>
+                              <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 49,990</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 69,890</h6>
+                                  <h6 class="text-success">28% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/electronics/mobile/mobile1.jpeg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">Realme C20 (Cool Grey, 32 GB)  (2 GB RAM)</h6>
+                              <span class="badge bg-success fw-bold">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 6,799</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 7,999</h6>
+                                  <h6 class="text-success">15% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/electronics/refregirator/refregirator.jpeg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">SAMSUNG 192 L Direct Cool Single Door 2 Star Refrigerator  (Gray Silver, RR19A241BGS/NL)</h6>
+                              <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 12,090</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 14,990</h6>
+                                  <h6 class="text-success">19% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/electronics/ac/ac.jpeg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">ONIDA 1.5 Ton 5 Star Split Dual Inverter AC - White  (IR185RHO_MPS, Copper Condenser)</h6>
+                              <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 33,490</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 61,990</h6>
+                                  <h6 class="text-success">45% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/fashion/men/tshirt.jpeg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">Striped Men Polo Neck Dark Blue T-Shirt</h6>
+                              <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 455</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 1299</h6>
+                                  <h6 class="text-success">64% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/grocery/grocery.jpeg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">Naturoz Almonds  (100 g)</h6>
+                              <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 100</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 90</h6>
+                                  <h6 class="text-success">10% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/fashion/women/kurtis.jpg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">Women Printed Rayon Straight Kurta</h6>
+                              <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 599</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 999</h6>
+                                  <h6 class="text-success">40% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                <!-- Product -->
+                <div class="product-card">
+                  <a href="product.html" class="nav-link px-0 text-dark">
+                      <div class="card border-0">
+                          <!-- Product Image -->
+                          <div class="card-header border-0 bg-white text-center px-md-3">
+                              <img src="./assets/images/categories/fashion/kids/kids.jpeg" class="product-img img-fluid mh-100">
+                          </div>
+                          <!-- Product Details -->
+                          <div class="card-body bg-white px-lg-3 px-1">
+                              <h6 class="product-title mb-2">Boys Festive & Party Angarkha and Dhoti Pant</h6>
+                              <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                              <div class="d-flex align-items-end mt-3">
+                                  <h5 class="discount-price me-2">&#8377; 1099</h5>
+                                  <h6 class="me-2 text-decoration-line-through text-muted fs-6">&#8377; 2499</h6>
+                                  <h6 class="text-success">56% off</h6>
+                              </div>
+                          </div>
+                          <!-- Wishlist -->
+                          <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+                      </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="border-top py-3 d-flex justify-content-between align-items-center flex-lg-row flex-column">
+              <p class="mb-lg-0">Page 1 of 311</p>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination mb-0">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Main -->
+  
+    <!-- Footer -->
+    <footer class="pb-3">
+      <div class="container-fluid">
+          <div class="row pt-5 px-sm-4">
+
+              <!-- About Us -->
+              <div class="col-lg-2 col-md-4 col-6">
+                  <h6 class="mb-2 text-white-50">About us</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Contact Us</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">About Us</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Careers</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Shopkart Stories</a></li>
+                  </ul>
+              </div>
+
+              <!-- Help -->
+              <div class="col-lg-2 col-md-4 col-6">
+                  <h6 class="mb-2 text-white-50">Help</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Payments</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Shipping</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Cancellation & Returns</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">FAQ</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Report Infringement</a></li>
+                  </ul>
+              </div>
+
+              <!-- Policy -->
+              <div class="col-lg-2 col-md-4 col-6">
+                  <h6 class="mb-2 text-white-50">Policy</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Return Policy</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Terms of Use</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Security</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Privacy</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Sitemap</a></li>
+                  </ul>
+              </div>
+
+              <!-- Social -->
+              <div class="col-lg-2 col-md-4 col-6">
+                  <h6 class="mb-2 text-white-50">Social</h6>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Facebook</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Twitter</a></li>
+                      <li><a href="#" class="text-white nav-link px-0 py-1">Youtube</a></li>
+                  </ul>
+              </div>
+
+              <!-- Mail Us -->
+              <div class="col-lg-2 col-md-4 col-6">
+                  <h6 class="mb-2 text-white-50">Mail Us</h6>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#" class="text-white nav-link px-0 py-1">
+                              Shopkart Internet Private Limited, Buildings Fiction, Fiction Village, Fiction Road, Fiction, 000000, India
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+
+              <!-- Registered Office Address -->
+              <div class="col-lg-2 col-md-4 col-6">
+                  <h6 class="mb-2 text-white-50">Registered Office Address</h6>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#" class="text-white nav-link px-0 py-1">
+                              Shopkart Internet Private Limited, Buildings Fiction, Fiction Village, Fiction Road, Fiction, 111111, India Telephone: 0000 000 0000
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <hr class="dropdown-divider bg-white">
+
+          <!-- Copyrights -->
+          <div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
+              <p class="mb-lg-0 text-white">Copyrights &copy; 2021</p>
+              <img src="./assets/images/payments.svg" class="img-fluid" alt="payments">
+          </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    
+    <!-- Script Files -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js" integrity="sha512-qqdD5ZLIGB5PCqCk1OD8nFBr/ngB5w+Uw35RE/Ivt5DK35xl1PFVkuOgAbqFpvtoxX6MpRGLmIqixzdhFOJhnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Fslightbox -->
+    <script src="./assets/js/fslightbox.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

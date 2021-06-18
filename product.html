@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Shopkart.com, Online Shopping, online shopping india, india shopping online, shopkart india, shopkart, buy online, buy mobiles online, buy books online, computers, laptop, toys, trimmers, watches, fashion jewellery, home, kitchen, small appliances, beauty, Sports, Fitness & Outdoors" />
+    <meta name="keywords" content="online shopping site, online shopping india, online shopping site india, cash on delivery, free shipping, shopkart.com" />
+    <meta name="og_title" property="og:title" content="Shopkart.com" />
+    <meta name="og_site_name" property="og:site_name" content="Shopkart.com" />
+    <meta name="og_url" property="og:url" id="og-url" content="https://www.shopkart.com" />
+    <meta property="og:image" content="./assets/images/favicon.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css" integrity="sha512-x9WWODH0qw+aXoiT69XzI4WX2MXpqvVGY+O9HpJ4wbjEubpjDIM5CwTrU/OFJg7tSMbBMpgwz2Qp6xlUsk+FgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Lighbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.5/css/lightgallery-bundle.min.css" integrity="sha512-Sg6/ETzjZfcuzu/KmKRj79kxj2o40cNSTtnc0igt6vT2IAhUt6UstDveJGvWa3sEr27BgWgsA7S4sGCYi78siA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Fav icon -->
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png" sizes="16x16" />
+
+    <title>Online Shopping Site India - Shop Electronics, Men & Women Clothing, Shoes</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Navbar -->
+    <nav class="sticky-top primary-navbar navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container justify-content-start">
+        <!-- Navbar Toggle -->
+        <button id="nav-toggle" class="btn text-white p-0 me-2 d-lg-none" type="button">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navbar Brand -->
+        <a class="navbar-brand me-sm-4" href="index.html">Shopkart</a>
+
+        <!-- Search -->
+        <form autocomplete="off" class="search-form d-flex bg-white mt-3 mt-lg-0 me-lg-4 order-lg-2 order-3">
+          <input class="form-control border-0 py-1" type="text" id="search" placeholder="Search for products" />
+          <button class="btn text-primary" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+          <ul class="search-suggest bg-white shadow list-group list-group-flush p-0 overflow-hidden">
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Mobile</a>
+            </li>
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Laptops</a>
+            </li>
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Tv</a>
+            </li>
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Tshirts</a>
+            </li>
+            <li>
+              <a class="list-group-item" href="#"><i class="fas fa-search me-2"></i> Furniture</a>
+            </li>
+          </ul>
+        </form>
+
+        <ul class="list-unstyled ms-auto d-flex justify-content-end align-items-center mb-0 order-lg-3 order-2">
+          <li class="nav-item d-flex align-items-center ms-4">
+            <a href="login.html" class="nav-link fw-bold btn btn-light text-primary py-1 px-sm-5 me-1" type="button">
+              <span class="d-sm-none fas fa-user"></span>
+              <span class="d-sm-inline-block d-none">Login</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown d-lg-block d-none mx-2">
+            <a class="dropdown-toggle nav-link text-white" href="#" id="more" role="button" data-bs-toggle="dropdown" aria-expanded="false"> More </a>
+            <ul class="dropdown-menu shadow-sm p-0 overflow-hidden" aria-labelledby="more">
+              <li>
+                <a class="dropdown-item border-bottom" href="#">Notification Preference</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-bottom" href="#">Sell on Shopkart</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-bottom" href="#">24 x 7 Customer Care</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-white" href="cart.html"
+              ><i class="fas fa-shopping-cart me-2"></i>
+              <span class="d-none d-lg-inline-block">Cart</span>
+              <span class="badge rounded-pill bg-danger">1</span></a
+            >
+          </li>
+        </ul>
+
+        <!-- Sidebar on Mobile Devices -->
+        <div class="min-vh-100 bg-white overflow-auto" id="sidebar">
+          <ul class="list-unstyled">
+            <li class="nav-item text-dark d-flex justify-content-end pt-3 pb-2 me-3">
+              <span id="close"><i id="close" class="fs-4 fa fa-times"></i></span>
+            </li>
+            <li class="nav-item bg-primary py-2">
+              <a class="nav-link text-white" href="login.html">Login & Sign Up</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="categories.html"><i class="fas fa-fw fa-th-large"></i> All Categories</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="orders.html"><i class="fas fa-fw fa-shopping-bag"></i> My Orders</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="coupons.html"><i class="fas fa-fw fa-ticket-alt"></i> My Coupons</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="cart.html"><i class="fas fa-fw fa-shopping-cart"></i> My Cart</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="wishlist.html"><i class="fas fa-fw fa-heart"></i> My Wishlist</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="profile.html"><i class="fas fa-fw fa-user"></i> My Account</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="#"><i class="fas fa-fw fa-users"></i> Help Centre</a>
+            </li>
+            <li class="nav-item py-2">
+              <a class="nav-link text-dark" href="#"><i class="fas fa-fw fa-sign-out-alt"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Product Container -->
+    <div class="container-fluid py-4">
+      <div class="row gx-2 align-items-start product">
+        <div class="col-lg-5 col-12 position-sticky" style="top: 65px">
+          <div class="border py-3">
+            <div class="product-images p-2 mb-4">
+              <!-- Main Image Container -->
+              <div class="main-image-container text-center mb-4">
+                <a data-fslightbox="gallery" href="./assets/images/categories/electronics/mobile/mobile1.jpeg">
+                  <img id="main-image" src="./assets/images/categories/electronics/mobile/mobile1.jpeg" class="img-fluid mh-100" alt="" />
+                </a>
+                <a data-fslightbox="gallery" class="d-none" href="./assets/images/categories/electronics/mobile/mobile2.jpeg">
+                  <img src="./assets/images/categories/electronics/mobile/mobile2.jpeg" class="img-fluid" alt="" />
+                </a>
+                <a data-fslightbox="gallery" class="d-none" href="./assets/images/categories/electronics/mobile/mobile3.jpeg">
+                  <img src="./assets/images/categories/electronics/mobile/mobile3.jpeg" class="img-fluid" alt="" />
+                </a>
+              </div>
+
+              <!-- Product Thubmnail -->
+              <div class="product-thumbnails px-2" style="height: 70px">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper h-100">
+                    <div class="swiper-slide border justify-content-center align-items-center">
+                      <img src="./assets/images/categories/electronics/mobile/mobile1.jpeg" class="btn p-0 img-fluid" alt="" />
+                    </div>
+                    <div class="swiper-slide border justify-content-center align-items-center">
+                      <img src="./assets/images/categories/electronics/mobile/mobile2.jpeg" class="btn p-0 img-fluid" alt="" />
+                    </div>
+                    <div class="swiper-slide border justify-content-center align-items-center">
+                      <img src="./assets/images/categories/electronics/mobile/mobile3.jpeg" class="btn p-0 img-fluid" alt="" />
+                    </div>
+                  </div>
+                  <!-- Product Thubmnail Navigation -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+
+              <!-- Wishlist -->
+              <a href="#" class="rounded-circle wishlist"><i class="far fa-heart text-danger"></i></a>
+            </div>
+
+            <!-- Buy Now Buttons -->
+            <div class="d-flex justify-content-center">
+              <button type="button" class="text-white btn add-to-cart me-2"><i class="fas fa-shopping-cart me-2"></i> ADD TO CART</button>
+              <button type="button" class="text-white btn buy-now me-2"><i class="fas fa-bolt me-2"></i> BUY NOW</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 col-12 ps-lg-4">
+          <div class="product-description pt-3">
+            <h5 class="text-dark mb-2">Realme C20 (Cool Grey, 32 GB) (2 GB RAM)</h5>
+            <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+            <div class="d-flex mt-3 align-items-end mb-3">
+              <h5 class="fs-2 mb-0 text-dark discount-price me-2">&#8377; 6,799</h5>
+              <h6 class="fs-6 mb-0 me-3 text-decoration-line-through text-muted fs-6">&#8377; 7,999</h6>
+              <h6 class="mb-0 text-success">15% off</h6>
+            </div>
+
+            <div class="mb-3 biginput">
+              <label class="form-label">Color</label>
+              <select class="form-select">
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="grey">Grey</option>
+              </select>
+            </div>
+
+            <div class="mb-3 biginput">
+              <label class="form-label">Size</label>
+              <select class="form-select">
+                <option selected>Select Size (UK/India)</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+              </select>
+            </div>
+
+            <div class="card rounded-0 mt-4">
+              <div class="card-header bg-white">
+                <p class="mb-0 fs-4">Product Description</p>
+              </div>
+              <div class="card-body">
+                <p class="fs-6 fw-bold text-primary">Seller: Fiction Stores</p>
+                <p class="mb-0 fs-6">
+                  The realme C20 is a mobile phone that will keep you entertained and productive at the same time. Its 16.5 cm (6.5) Large HD+ Display ensures that you get an expansive view of movies, games, and even work-related docs for a more immersive experience. Thanks to the Helio G35 Powerful Processor, you can enjoy a high clock speed that will make it almost effortless for you to multitask and game. And, with the AI Selfie Camera, you can take stunning selfies that will be a hit on
+                  social media.
+                </p>
+              </div>
+            </div>
+
+            <div class="container-fluid px-0 border mt-4">
+              <p class="fs-4 bg-white border-bottom p-2 mb-3">Reviews</p>
+
+              <!-- Your Review -->
+              <div class="card review border-0 border-bottom rounded-0 mb-4">
+                <div class="card-header border-0 bg-white">
+                  <span>Your Review</span>
+                </div>
+                <div class="card-body pt-0">
+                  <form action="#">
+                    <div class="btn-group mb-2">
+                      <input type="radio" name="rating" class="btn-check" value="1" />
+                      <label class="py-0 px-1 btn btn-outline-primary"><i class="far fa-star"></i></label>
+
+                      <input type="radio" name="rating" class="btn-check" value="2" />
+                      <label class="py-0 px-1 btn btn-outline-primary"><i class="far fa-star"></i></label>
+
+                      <input type="radio" name="rating" class="btn-check" value="3" />
+                      <label class="py-0 px-1 btn btn-outline-primary"><i class="far fa-star"></i></label>
+
+                      <input type="radio" name="rating" class="btn-check" value="4" />
+                      <label class="py-0 px-1 btn btn-outline-primary"><i class="far fa-star"></i></label>
+
+                      <input type="radio" name="rating" class="btn-check" value="5" />
+                      <label class="py-0 px-1 btn btn-outline-primary"><i class="far fa-star"></i></label>
+                    </div>
+
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Title</label>
+                      <input type="text" class="form-control" name="review-title" />
+                    </div>
+
+                    <div class="mb-3 biginput">
+                      <label class="form-label">Description</label>
+                      <textarea class="form-control" name="review-description"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Review -->
+              <div class="card border-0 border-bottom rounded-0 mb-4">
+                <div class="card-header border-0 bg-white">
+                  <span class="badge bg-success">4.2 <i class="fas fa-star"></i></span>
+                  <span>Great Product</span>
+                </div>
+                <div class="card-body">
+                  <p class="mb-0 fs-6">Good handy phone with decent performance. Good for the first time smartphone users. battery backup is pro level, network availability is good,not that heavy. i prefer this to c11 as it has CGG protection.</p>
+                  <p class="mb-0 mt-4 text-muted fs-6">Adhiban</p>
+                </div>
+              </div>
+
+              <!-- Review -->
+              <div class="card border-0 rounded-0 mb-4">
+                <div class="card-header border-0 bg-white">
+                  <span class="badge bg-success">4 <i class="fas fa-star"></i></span>
+                  <span>Awesome Mobile</span>
+                </div>
+                <div class="card-body">
+                  <p class="mb-0 fs-6">Cammera is very good and battery is good. Phone is better very good product. I love this product</p>
+                  <p class="mb-0 mt-4 text-muted fs-6">Venkatesh</p>
+                </div>
+              </div>
+
+              <!-- All Review -->
+              <a href="allReviews.html" class="fs-6 fw-bold nav-link pt-0 pb-3 text-primary">All Reviews (45)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product Container -->
+
+    <!-- Footer -->
+    <footer class="pb-3">
+      <div class="container-fluid">
+        <div class="row pt-5 px-sm-4">
+          <!-- About Us -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">About us</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Shopkart Stories</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Help -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Help</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Payments</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Shipping</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Cancellation & Returns</a>
+              </li>
+              <li><a href="#" class="text-white nav-link px-0 py-1">FAQ</a></li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Report Infringement</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Policy -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Policy</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Return Policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Terms of Use</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Security</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Privacy</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Social</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Facebook</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mail Us -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Mail Us</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1"> Shopkart Internet Private Limited, Buildings Fiction, Fiction Village, Fiction Road, Fiction, 000000, India </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Registered Office Address -->
+          <div class="col-lg-2 col-md-4 col-6">
+            <h6 class="mb-2 text-white-50">Registered Office Address</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white nav-link px-0 py-1"> Shopkart Internet Private Limited, Buildings Fiction, Fiction Village, Fiction Road, Fiction, 111111, India Telephone: 0000 000 0000 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="dropdown-divider bg-white" />
+
+        <!-- Copyrights -->
+        <div class="d-flex justify-content-between align-items-center flex-lg-row flex-column">
+          <p class="mb-lg-0 text-white">Copyrights &copy; 2021</p>
+          <img src="./assets/images/payments.svg" class="img-fluid" alt="payments" />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Script Files -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js" integrity="sha512-qqdD5ZLIGB5PCqCk1OD8nFBr/ngB5w+Uw35RE/Ivt5DK35xl1PFVkuOgAbqFpvtoxX6MpRGLmIqixzdhFOJhnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Fslightbox -->
+    <script src="./assets/js/fslightbox.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
